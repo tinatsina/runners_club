@@ -33,9 +33,7 @@ public class RunRepository {
   {
     Optional<Run> existingRun = findByID(id);
 
-    if (existingRun.isPresent()) {
-      runs.set(runs.indexOf(existingRun.get()),run);
-    }
+      existingRun.ifPresent(value -> runs.set(runs.indexOf(value), run));
   }
 
   void delete(Integer id)
