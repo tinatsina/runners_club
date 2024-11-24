@@ -25,8 +25,14 @@ public class RunnersApplication {
 	@Bean
 		CommandLineRunner runner () {
 			return args -> {
-				Run run = new Run(1,"Mornig Jog",LocalDateTime.now(),LocalDateTime.now().plus(1,ChronoUnit.HOURS),5,Location.OUTDOOR);
-				log.info("Run :" + run);
+				Run run = new Run(
+					1,
+					"Mornig Jog",
+					LocalDateTime.now(),
+					LocalDateTime.now().plus(1,ChronoUnit.HOURS),
+					5,
+					Location.OUTDOOR);
+				log.info(run.toString());
 			};
 		}
 
