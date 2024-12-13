@@ -6,6 +6,8 @@ a basic running app to track runs and request them via an API
 
 - Spring Boot
 - Validation Jakarta
+- Swagger UI
+- VS Code
 
 ## Author 👨🏿‍⚕️
 
